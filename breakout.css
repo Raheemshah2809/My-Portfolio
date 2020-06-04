@@ -1,15 +1,29 @@
 body {
-    background-color: black}
-        .header1 {
-        color: white ;}
+ background-color: black}
+.header1 {
+color: white ;}
+
+.subheader1 {
+color:white ;
+font-family: 'Roboto', sans-serif;}
         
-        .subheader1 {
-        color:white ;
-        font-family: 'Roboto', sans-serif;}
-        .small{
+.small{
             color: white;
+}
+.link{
+color: white ;
+text-align: center;}
+
+ a:link {
+color: red 
         }
-        .link{
-        color: white ;
-        text-align: center;
-        }
+a:visited {
+color: blue;}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: purple;
+}
