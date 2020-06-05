@@ -29,3 +29,8 @@ body {
    a:active {
        color: purple;
    }
+
+   .Ps{
+    color: white ;
+    font-family: Arial, Helvetica, sans-serif;
+}
