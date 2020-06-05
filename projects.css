@@ -1,0 +1,31 @@
+body {
+    background-color: black}
+   .header1 {
+   color: white ;}
+   
+   .subheader1 {
+   color:white ;
+   font-family: 'Roboto', sans-serif;}
+           
+   .small{
+               color: white;
+   }
+   .link{
+   color: white ;
+   text-align: center;}
+   
+   
+   
+   
+   a:hover {
+       color: green;
+   }
+    a:link {
+   color: red 
+           }
+   a:visited {
+   color: blue;}
+   
+   a:active {
+       color: purple;
+   }
