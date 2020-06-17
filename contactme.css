@@ -58,3 +58,34 @@ a:active {
 .abme{
     color: white;
 }
+
+.logo {
+    width: 180px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .email {
+    width: 100%;
+    transition: transform .5s;
+  }
+  .logo-text{
+    color: darkorange;
+    font-size: .9em;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity .5s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .logo:hover .email{
+    transform: translateY(-20px);
+  }
+  .logo:hover .logo-text {
+    opacity: 1;
+  }
