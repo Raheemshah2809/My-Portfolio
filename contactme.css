@@ -60,12 +60,16 @@ a:active {
 }
 
 .logo {
-    width: 180px;
+    width: 100px;
     margin: 0 auto;
     position: relative;
   }
 
   .email {
+    width: 100%;
+    transition: transform .5s;
+  }
+  .linkedin {
     width: 100%;
     transition: transform .5s;
   }
@@ -83,9 +87,10 @@ a:active {
     left: 0;
     right: 0;
   }
-  .logo:hover .email{
+  .logo:hover .email .linkedin .text{
     transform: translateY(-20px);
   }
   .logo:hover .logo-text {
     opacity: 1;
   }
+
