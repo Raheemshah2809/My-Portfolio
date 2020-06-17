@@ -60,10 +60,7 @@ a:active {
     width: 100%;
     transition: transform .5s;
   }
-  .linkedin {
-    width: 100%;
-    transition: transform .5s;
-  }
+  
   .logo-text{
     color: darkorange;
     font-size: .9em;
