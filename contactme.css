@@ -51,7 +51,6 @@ a:active {
 }
 
 .contact-methods li{
-    display:inline-block;
     text-decoration:none;
     transition: transform .5s;
   }
@@ -84,6 +83,8 @@ a:active {
     height:100px;
     object-fit:cover;
     object-position:top;
+    display: block;
+    margin: 0 auto;
   }
   
 
