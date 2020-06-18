@@ -19,9 +19,14 @@ body {
         color: white;
     }
     .link{
+    display: inline-block;
     color: white ;
     text-align: center;
     }
+    .link2{
+        color: white ;
+        text-align: center;
+        }
     
     a {
         color: white;
