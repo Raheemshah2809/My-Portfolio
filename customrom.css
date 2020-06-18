@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+
+
 body {
     background-color: black}
     .header1 {
@@ -13,18 +23,29 @@ body {
     text-align: center;
     }
     
-    
-    a:hover {
-        color: green;
+    a {
+        color: white;
+       text-decoration: none;
+       
     }
-     a:link {
-    color: red 
-            }
-    a:visited {
-    color: blue;}
+    .link {
+        display: inline-block;
+        padding: .5em;
+    }
+    
+    .mainnav{
+        text-align: center;
+        font-size: 25px;
+        font-weight: lighter;
+        border: 1px solid lightgrey;
+    }
+    
+    a:hover{
+        color: greenyellow; 
+    }
     
     a:active {
-        color: purple;
+        color: red;
     }
 
     .Ps{
