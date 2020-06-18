@@ -59,6 +59,7 @@ a:active {
 .contact-methods li{
     text-decoration:none;
     transition: transform .5s;
+    list-style-type: none;
   }
   
   .contact-methods li:hover {
