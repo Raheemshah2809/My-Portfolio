@@ -1,7 +1,11 @@
 
 
 body {
-    background-color: black}
+    background-image: url("https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
    .header1 {
    color: white ;
    text-align: center;}
