@@ -12,6 +12,8 @@ body {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        background-color: rgba(31, 32, 27, 0.5); 
+        background-blend-mode: multiply;
     }
 
 .header1 {
