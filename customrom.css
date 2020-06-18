@@ -77,6 +77,9 @@ font-family: Roboto, Arial, Helvetica, sans-serif;
   .dropdown {
     position: relative;
     display: inline-block;
+    left: 390px;
+    bottom: 75px;
+
   }
   
   .dropdown-content {
