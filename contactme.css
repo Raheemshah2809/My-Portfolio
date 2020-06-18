@@ -78,7 +78,7 @@ a:active {
   .logo:hover .email {
     transform: translateY(-20px);
   }
-  .logo:hover .logo-text {
+  .logo:hover .logo-text{
     opacity: 1;
   }
 
