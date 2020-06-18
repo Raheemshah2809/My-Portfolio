@@ -84,4 +84,40 @@ a:active {
     opacity: 1;
   }
 
+
+  .llogo{
+    width: 100px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .linkedin{
+    width: 100%;
+    transition: transform .5s;
+    position: absolute;
+    right: 25em;
+  }
+
+  .logo-textl{
+    color: darkorange;
+    font-size: .9em;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity .5s;
+    position: absolute;
+    bottom: 0;
+    right: 30em;
+    top: 6em;
+  }
+  .logo:hover .llogo{
+    transform: translateY(-20px);
+  }
+  .logo:hover .logo-textl{
+    opacity: 1;
+  }
+
+
   
