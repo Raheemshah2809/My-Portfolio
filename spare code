@@ -14,3 +14,30 @@
  <footer>
                 <small class="small">&copy; 2020, Raheem Shah</small>
             </footer>
+
+
+
+
+
+    <html>
+  <body>
+    <header>
+        <h1 class="header1">Here are all the different ways you can contact me on.</h1>
+    </header>
+
+    <ul class="contact-methods">
+      <li>
+        <img class="email" src="https://img.icons8.com/fluent/128/000000/new-post.png"/>
+    <span class="contact-type">Email</span>
+      </li>
+      <li>
+        <img class="email" src="https://github.githubassets.com/images/modules/open_graph/github-mark.png"/>
+    <span class="contact-type">Git</span>
+      </li>
+      <li>
+      <img class="email" src="https://img.icons8.com/color/128/000000/linkedin.png"/>
+      <span class="contact-type">Linkedin</span>
+      </li>
+    </ul>
+  </body>
+</html>
