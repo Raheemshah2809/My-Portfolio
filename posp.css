@@ -18,6 +18,7 @@ body {
            
    .small{
                color: white;
+               background-attachment: fixed;
    }
    .link{
    color: white ;
