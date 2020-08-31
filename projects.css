@@ -3,8 +3,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: rgba(31, 32, 27, 0.5); 
+    background-color: rgba(31, 32, 27, 0.65); 
     background-blend-mode: multiply;
+    background-attachment: fixed; 
+    
 }
    .header1 {
    color: white ;
