@@ -1,4 +1,6 @@
-body {
+
+html {
+
     background-image: url("https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
     background-repeat: no-repeat;
     background-position: center;
@@ -6,7 +8,6 @@ body {
     background-color: rgba(31, 32, 27, 0.65); 
     background-blend-mode: multiply;
     background-attachment: fixed; 
-    
 }
 .header1 {
 color: white ;}
@@ -37,3 +38,72 @@ color: blue;}
 a:active {
     color: purple;
 }
+:root {
+    --items-color: #f00;
+  }
+  body {
+    display: grid;
+    margin: 0;
+    min-height: 100vh;
+  }
+  i, h1 {
+    font-family: 'Luckiest Guy';
+  }
+  .line {
+    position: absolute;
+    height: 1.5px;
+    background: var(--items-color);
+    top: 0;
+  }
+  .flying-man {
+    height: 50vh;
+    max-height: 400px;
+    animation: turbulance 0.2s ease-in-out infinite;
+    -webkit-animation: turbulance 0.2s ease-in-out infinite;
+  }
+  .flying-man path{
+    fill: var(--items-color);
+    stroke: var(--items-color);
+  }
+  #loader {
+    position: relative;
+    overflow: hidden;
+    background: #fff; /* #f1c312 */
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+  }
+  .message {
+      color: var(--items-color);
+      transform: translateY(-40vh);
+      -webkit-transform: translateY(-40vh);
+      -moz-transform: translateY(-40vh);
+      -ms-transform: translateY(-40vh);
+      -o-transform: translateY(-40vh);
+  }
+  .message::after {
+    content: '.';
+    animation: loading 3s linear infinite;
+  }
+  @keyframes turbulance {
+    20% {
+      transform: translateX(1.5px) rotate(0.8deg);
+    }
+    40% {
+      transform: translateX(-0.5px) rotate(0.4deg);
+    }
+    60% {
+      transform: translateX(0.5px) rotate(0.8deg);
+    }
+    80% {
+      transform: translateX(-1px) rotate(0.8deg);
+    }
+  }
+  @keyframes loading {
+    33% {
+      content: '..';
+    }
+    66% {
+      content: '...';
+    }
+  }
