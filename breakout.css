@@ -52,9 +52,10 @@ a:active {
   .line {
     position: absolute;
     height: 1.5px;
-    background: var(--items-color);
+    background: blue;
     top: 0;
   }
+
   .flying-man {
     height: 50vh;
     max-height: 400px;
