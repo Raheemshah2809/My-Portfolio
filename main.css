@@ -133,3 +133,24 @@ html {
     }
   }
  
+
+  *{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(25,27,36);
+  }
+  
+  #motionPath .sub-circle {
+    opacity: 0;
+  }
+  
+  .tick {
+    visibility: hidden;
+  }
