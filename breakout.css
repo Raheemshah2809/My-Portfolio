@@ -23,9 +23,6 @@ font-family: 'Roboto', sans-serif;}
 color: white ;
 text-align: center;}
 
-
-
-
 a:hover {
     color: green;
 }
@@ -66,7 +63,7 @@ a:active {
     fill: var(--items-color);
     stroke: var(--items-color);
   }
-  #loader {
+  #Loader {
     position: relative;
     overflow: hidden;
     background: black; /* #f1c312 */

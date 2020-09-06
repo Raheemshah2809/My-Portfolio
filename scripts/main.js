@@ -35,4 +35,4 @@ function  createLines(amount, parent) {
         flying: flying,
     }
   }
-  createLines(3, loader).flying(300, 100);
+  createLines(3, Loader).flying(300, 100);
