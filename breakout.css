@@ -72,7 +72,7 @@ a:active {
     place-items: center;
   }
   .message {
-      color: var(--items-color);
+      color: lightyellow;
       transform: translateY(-40vh);
       -webkit-transform: translateY(-40vh);
       -moz-transform: translateY(-40vh);
