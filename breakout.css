@@ -69,7 +69,7 @@ a:active {
   #loader {
     position: relative;
     overflow: hidden;
-    background: black; /* #f1c312 */
+    background: white /* #f1c312 */
     display: grid;
     min-height: 100vh;
     place-items: center;
