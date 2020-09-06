@@ -66,7 +66,7 @@ a:active {
   #Loader {
     position: relative;
     overflow: hidden;
-    background: rgb (241, 196, 18) /* #f1c312 */
+    background: rgb (241, 196, 18); /* #f1c312 */
     display: grid;
     min-height: 100vh;
     place-items: center;
