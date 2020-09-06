@@ -66,18 +66,19 @@ a:active {
   #Loader {
     position: relative;
     overflow: hidden;
-    background: black; /* #f1c312 */
+    background: #f1c312 /* #f1c312 */
     display: grid;
     min-height: 100vh;
     place-items: center;
   }
   .message {
-      color: lightyellow;
+      color: black;
       transform: translateY(-40vh);
       -webkit-transform: translateY(-40vh);
       -moz-transform: translateY(-40vh);
       -ms-transform: translateY(-40vh);
       -o-transform: translateY(-40vh);
+      font-size: 30px;
   }
   .message::after {
     content: '.';
