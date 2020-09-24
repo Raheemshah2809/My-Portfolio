@@ -1,6 +1,6 @@
 body {
     background-image: 
-    url('/Users/raheemshah/Documents/Raheemshah.github.io/Images/background1.jpg');
+    url(/Users/raheemshah/Documents/Raheemshah.github.io/Images/background1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
