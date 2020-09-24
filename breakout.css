@@ -1,5 +1,5 @@
+html {
 
-body {
     background-image: url("https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
     background-repeat: no-repeat;
     background-position: center;
@@ -8,3 +8,39 @@ body {
     background-blend-mode: multiply;
     background-attachment: fixed; 
 }
+
+.header1 {
+    color: white ;
+    text-align: center}
+    
+    .subheader1 {
+    color:white;
+    text-align: center
+    }
+
+
+    a {
+        color: white;
+       text-decoration: none;
+       
+    }
+    .link {
+        display: inline-block;
+        padding: .5em;
+    }
+    
+    .mainnav{
+        text-align: center;
+        font-size: 25px;
+        font-weight: lighter;
+        border: 1px solid lightgrey;
+    }
+    
+    a:hover{
+        color: greenyellow; 
+    }
+    
+    a:active {
+        color: red;
+    }
+    
