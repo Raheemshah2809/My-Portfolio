@@ -83,3 +83,11 @@ a:active {
     text-align: center;
     font-size: 30px;
 }
+.email{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+    object-position:top;
+    display: block;
+    margin: 0 auto;
+}
