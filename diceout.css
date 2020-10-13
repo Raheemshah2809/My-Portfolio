@@ -69,7 +69,12 @@ a:active {
 
 .abgame{
     color: white;
-    text-align: center;
     font-size: 25px;
+
+}
+.abtitle{
+    color: white;
+    text-align: center;
+    font-size: 35px;
 
 }
