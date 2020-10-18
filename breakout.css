@@ -16,6 +16,14 @@ html {
     background-attachment: fixed; 
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgba(31, 32, 27, 0.65); 
+}
+
 .header1 {
     color: white ;
     text-align: center}
