@@ -136,7 +136,7 @@ font-family: Roboto, Arial, Helvetica, sans-serif;
 #dialogbox{
   display: none;
   position: absolute;
-  background: rgb(0, 47, 43);
+  background: rgb(165 14 14);
   border-radius:7px; 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.575);
   transition: 0.3s;
