@@ -32,7 +32,9 @@ header {
 
 .header1 {
 color: white ;
-text-align: center}
+text-align: center;
+text-decoration: underline;
+}
 
 .subheader1 {
 color:white;
@@ -61,14 +63,18 @@ text-align: center
 .abtitle{
     color: white;
     text-align: center;
-    font-size: 20px;
-
+    font-size: 25px;
+    font-style: italic;
 }
+
+
 .smtitle{
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
+    font-style: italic
 }
+
 .email{
     width:100px;
     height:100px;
