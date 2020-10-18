@@ -3,6 +3,7 @@
 *{
     box-sizing: border-box;
     font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: lighter;
 }
 
 html {
@@ -34,7 +35,7 @@ header {
     }
 
 
-    nav__links a,
+    .nav__links a,
     .cta,
     .overlay__content a {
         font-family: "Montserrat", sans-serif;
