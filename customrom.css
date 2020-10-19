@@ -22,9 +22,6 @@ body {
     background-attachment: fixed; 
     
 }
-    .header1 {
-    color: white ;}
-    
     .subheader1 {
     color:white ;}
     .small{
@@ -81,7 +78,10 @@ font-family: Roboto, Arial, Helvetica, sans-serif;
     color: white;
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
-
+.header2 {
+        color: white ;
+        text-align: center;
+}
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
