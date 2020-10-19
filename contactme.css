@@ -63,7 +63,7 @@ a:active {
     text-decoration:none;
     transition: transform .5s;
     list-style-type: none;
-    padding: 425px,50px,425px,50;
+    margin: 425px,50px,425px,50px;
   }
   
   .contact-methods li:hover {
