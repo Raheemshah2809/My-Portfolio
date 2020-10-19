@@ -68,6 +68,7 @@ body {
     .Ps{
         color: white ;
         font-family: Roboto, Arial, Helvetica, sans-serif;
+        text-align:center;
     }
 
 .pslist{
