@@ -268,22 +268,21 @@ font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 #dialogbox > div > #dialogboxhead{ 
-  background: rgb(0, 77, 70); 
+  background: rgb(175 18 18); 
   font-size:19px; 
   padding:10px; 
   color:rgb(255, 255, 255); 
-  font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
 
 #dialogbox > div > #dialogboxbody{ 
-  background:rgb(0, 47, 43); 
+  background:rgb(175 18 18); 
   padding:20px; 
   color:#FFF; 
   font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
 
 #dialogbox > div > #dialogboxfoot{ 
-  background: rgb(0, 47, 43); 
+  background: rgb(175 18 18); 
   padding:10px; 
   text-align:right; 
 }
