@@ -149,3 +149,15 @@ header {
     display: initial;
         }
     }
+
+    .abgame{
+      color: white;
+      font-size: 25px;
+  
+  }
+  .abtitle{
+      color: white;
+      text-align: center;
+      font-size: 25px;
+      font-style: italic;
+  }
