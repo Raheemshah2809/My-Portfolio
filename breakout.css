@@ -170,3 +170,10 @@ header {
     display: block;
     margin: 0 auto;
 }
+
+.smtitle{
+  color: #dade0e;
+  text-align: center;
+  font-size: 25px;
+  font-style: italic
+}
