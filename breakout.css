@@ -162,7 +162,7 @@ header {
       font-style: italic;
   }
 
-  email{
+  .email{
     width:100px;
     height:100px;
     object-fit:cover;
