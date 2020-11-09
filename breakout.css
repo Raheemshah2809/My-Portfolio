@@ -161,3 +161,12 @@ header {
       font-size: 25px;
       font-style: italic;
   }
+
+  email{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+    object-position:top;
+    display: block;
+    margin: 0 auto;
+}
