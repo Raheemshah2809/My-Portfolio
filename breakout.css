@@ -149,3 +149,31 @@ header {
     display: initial;
         }
     }
+
+    .abgame{
+      color: white;
+      font-size: 25px;
+  
+  }
+  .abtitle{
+      color: white;
+      text-align: center;
+      font-size: 25px;
+      font-style: italic;
+  }
+
+  .email{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+    object-position:top;
+    display: block;
+    margin: 0 auto;
+}
+
+.smtitle{
+  color: #dade0e;
+  text-align: center;
+  font-size: 25px;
+  font-style: italic
+}
