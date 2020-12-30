@@ -2,57 +2,121 @@
 <html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <head>
         <meta charset="utf-8">
         <title>Raheem's Portfolio</title>
+        <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+        <link rel = "stylesheet" type = "text/css" href = "https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel = "stylesheet" type = "text/css" href = "main.css" />
     <link rel ="icon" href="https://img.icons8.com/color/40/000000/home.png"/>
-    </head>
-<body>
-        <header>
-            <nav>
-                <ul class="nav__links">
-<li><a href="Breakout.html">Breakout Game</a></li>
-<li ><a href="diceout.html">Diceout Game</a></li>
-<li ><a href="customrom.html">Custom Rom Blog</a></li>
-<a href="https://raheemshah2809.github.io/Web-Solutions-UK/">Client Websites</a>
-                    
-                </ul>
-            </nav>
-            <a class="cta" href="contactme.html">Contact Me</a>
-            <p class="menu cta">Menu</p>
-        </header>
-        <div class="overlay">
-            <a class="close">&times;</a>
-            <div class="overlay__content">
-                <a href="Breakout.html">Breakout Game</a>
-                <a href="diceout.html">Diceout Game</a>
-                <a href="customrom.html">Custom Rom Blog</a>
-                <a href="https://raheemshah2809.github.io/Web-Solutions-UK/">Client Websites</a>
-                <a href="contactme.html">Contact me</a>
-            </div>
-        </div>
-        <script type="text/javascript" src="mobile.js"></script>
-    <div>
-        <div id="wrapper">
-        <h1 class="header1">Welcome To Raheem's Portfolio
-        <br> 
-    This is where all of my Project will be displayed</h1>
-        </div>
-        <br>
-        <h1 class="about-me">About me</h1>
-        <br>
-<p class="abme">
-Hi and welcome to my Portfolio, This is where all of my projects and past works will be displayed. I'm currently a 20-year-old software engineer who started with no knowledge of programming at all, and now I have created this website from the ground up and created 2 applications. I wanted to learn more about how programmes and applications are made so I can one day make my own. My end goal is to start-up a business which will help people in the future from making lives easier to going full autonomous.
-</p>
-
-<footer>
-    <small class="small">&copy; 2020, Raheem Shah</small>
-    <br>
-    <small class="small">Version 1.2.23.11.2020</small>
     
-</footer>
-        
+    </head>
+  
+  
+  <body>
+    <div>
+    <header id="home">
+      
+      <nav>
+        <div class="row">
+          <div class="row logo">
+            <div class="logo-text">
+              <h1>RaheemShah</h1>
+              <h2>Junior Developer</h2>
+            </div>
+          </div>
+          
+          <ul class="main-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#expertise">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="contactme.html">Contact</a></li>
+          </ul>
+          
         </div>
-        </body>
-        </html>
+      </nav>
+      
+      
+      <div class="hero-text-box">
+        <h2>Hi And Welcome To My Portfolio</h2>
+        <br>
+        <p>I am young Software Engineer who wants to show off my skills to clients and employers. I currently own a small business where I create websites for clients either for personal or commercial use. Please feel free to have a look by visiting the site linked below (UK Web Solutions).<p>
+        <a class="btn btn-full js--scroll-to-contact" href="https://docs.google.com/document/d/1GzdDTFlCNG8JYlperxk3EEveaR--ICu9pKat6rL7nh0/edit?usp=sharing" target='_blank'>Resume / CV</a>
+        <a class="btn btn-ghost js--scroll-to-contact" href="https://raheemshah2809.github.io/Web-Solutions-UK/" target="_blank">UK Web Solutions</a>
+      </div>
+      
+    </header>
+    
+    <section class="section-features" id="expertise">
+      <div class="section-features-title">
+        <h2>Skills</h2>
+        <p>Here are some of my skills I have learned and still adapting and expanding to create exciting and helpful applications that can benefit people</p>
+      </div>
+      
+      <div class="section group">
+        
+        <div class="col span_1_of_3 box">
+          <i class="ion-android-bulb big-icon"></i>
+          <h3> Bright Ideas</h3>
+          <p>I collaborate with clients and other individuals to help create the best Ideas and then turn them into reality.</p>
+        </div>
+        <div class="col span_1_of_3  box">
+          <i class="ion-android-desktop big-icon"></i>
+          <h3>Websites</h3>
+          <p>I create websites for clients either for personal or commercial use. I am also devlopeing these apps as android and IOS applications for clients, In the meantime I have created 2 games using java built for android</p>
+        </div>
+        <div class="col span_1_of_3 box">
+          <i class="ion-social-html5-outline big-icon"></i>
+          <h3>Code</h3>
+          <p>Here are some of the languages I have learned and use nearly everyday. <br>
+            MySQL, Java, HTML, Sales, PhpMyAdmin, JavaScript , CSS , SQL, Bootstrap, Scss, Less.
+        </p>
+        </div>
+       
+      </div>
+  
+    </section>
+
+  
+    <section class="section-portfolio" id="portfolio">
+      <!-- --------------------- -->
+      <div class="projects-page">
+        <h1 class="header1">Projects</h1>
+        <p class="header1">Here are all of my projects I have completed so far with many more to come soon!</p>
+      </div>
+      <ul class="list">
+     <a href="Breakout.html" <p>BreakOut Game</p></a>
+     <a href="diceout.html" <p>DiceOut Game</p></a>
+     <a href="https://nabzcutz.com/index.html" <p>The Booth UK</p></a>
+     <a href="https://tonisdeli.co.uk/" <p>Toni's Deli</p></a>
+</ul>
+
+
+
+</ul>
+    </section>
+
+    <footer>
+      <div>
+      </div>
+      <div>
+        <p>Made By Raheem Shah  &copy; 2020<br>
+            Version 1.3 01.01.2021
+
+        </p>
+      </div>
+      <div class="social-icons">
+        <ul class="social-links">
+          <li><a target='_blank' href="https://twitter.com/RaheemS60576255"><i class="ion-social-twitter"></i></a></li>
+          <li><a target='_blank' href="https://www.linkedin.com/in/raheemshah2809/"><i class="ion-social-linkedin"></i></a></li>
+          <li><a target='_blank' href="https://www.instagram.com/raheemshah2809/"><i class="ion-social-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/Raheemshah2809/" target='_blank'><i class="ion-social-facebook"></i></a></li>
+          <li><a href="https://github.com/Raheemshah2809" target='_blank'><i class="ion-social-github"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+    
+  
+    </div>
+  </body>
+  </html>
+    
