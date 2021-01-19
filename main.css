@@ -96,12 +96,14 @@ header p {
   background-color:  #008B8B;
   border: 1px solid  #008B8B;
   color: #fff;
+  margin-bottom: 13px;
 }
 
 .btn-ghost:link, .btn-ghost:visited {
   border: 1px solid  #008B8B;
   color:  #008B8B;
   margin-left: 10px;
+  margin-bottom: 13px;
 }
 
 .btn-full:hover, .btn-full:active {
@@ -712,10 +714,10 @@ Responsive grid system...........................
   text-align-last: left; 
   margin: 2px 0 0 2px;
 }
-.logo-text h1 { font-size: 60%; }
+.logo-text h1 { font-size: 82%; }
 
 .logo-text h2 {
-    font-size: 50%;
+    font-size: 60%;
     font-weight: 400;
     letter-spacing: 0;
     word-spacing: -1px; 
@@ -730,7 +732,7 @@ Responsive grid system...........................
   .main-nav li a:link,
   .main-nav li a:visited{
     padding: 6px 0;
-    font-size: 40%;
+    
   }
   /*Sticky Nav.......... */
   .sticky .main-nav {
