@@ -1,0 +1,282 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+html {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Audiowide", cursive;
+  font-size: 2em;
+  font-size: 6vw;
+  line-height: 1.2;
+  margin: 0.5em 0 3em;
+  text-shadow: 1px 1px 1px #333;
+}
+
+@media (min-width: 67.1875em) {
+  h1 {
+    font-size: 4em;
+  }
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #120103;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  background: #3e474f;
+  box-shadow: 0 0.5em 1em #111;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+}
+header label {
+  color: #788188;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 4.25em;
+  font-size: 0.75em;
+  font-weight: bold;
+  padding: 0 1em;
+}
+
+header label:hover {
+  background: #2e353b;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-color: #120103;
+  background-position: 50% 50%;
+  background-size: cover;
+  transition: left 0s 0.75s;
+}
+.slide-one {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/65463/starryFarm.jpg");
+}
+.slide-two {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/65463/campusDarkDays.jpg");
+}
+.slide-three {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/65463/autumn.jpg");
+}
+.slide-four {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/65463/lakehouse.jpg");
+}
+.slide-five {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/65463/lakehouse.jpg");
+}
+.slide-six {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/65463/lakehouse.jpg");
+  }
+.slide h1 {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s 0.5s, opacity 0.5s;
+}
+
+[id^=slide]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
+[id^=slide]:checked + .slide h1 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s 0.5s;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 30px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.abtitle{
+    font-size: 1.75rem;
+    position: relative;
+    bottom: 44px;
+}
+.smtitle1{
+    font-size: 1.75rem;
+    position: relative;
+    bottom: 44px;
+}
+.smtitle{
+    font-size: 1.75rem;
+    position: relative;
+    bottom: 44px;
+}
+.abgame{
+    font-size: 14px;
+    position: relative;
+    bottom: 44px;
+}
+.abgame1{
+    font-size: 14px;
+    position: relative;
+    bottom: 44px;
+}
+.abgame2{
+    font-size: 14px;
+    position: relative;
+    bottom: 44px;
+}
+.icon{   
+        font-size: 14px;
+        position: relative;
+        bottom: 44px;
+}
+
+.email{
+        position: relative;
+        bottom: 44px;
+        right: 17px;
+}§  
