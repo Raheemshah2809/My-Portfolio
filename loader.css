@@ -1,108 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai&display=swap');
 
-html {
-
-    background-image: url("https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: rgba(31, 32, 27, 0.65); 
-    background-blend-mode: multiply;
-    background-attachment: fixed; 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.header1 {
-color: white ;}
 
-.subheader1 {
-color:white ;
-font-family: 'Roboto', sans-serif;}
-        
-.small{
-            color: white;
+html,
+body {
+  height: 100vh;
 }
-.link{
-color: white ;
-text-align: center;}
 
-a:hover {
-    color: green;
+body {
+  background-color: #C1D0D0;
+  font-family: Roboto, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
- a:link {
-color: red 
-        }
-a:visited {
-color: blue;}
 
-a:active {
-    color: purple;
+section{
+  /*height: 150px;
+  width: 200px;
+  padding: 5px;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-:root {
-    --items-color: #f00;
-  }
-  body {
-    display: grid;
-    margin: 0;
-    min-height: 100vh;
-  }
-  i, h1 {
-    font-family: 'Luckiest Guy';
-  }
-  .line {
-    position: absolute;
-    height: 1.5px;
-    background: blue;
-    top: 0;
-  }
 
-  .flying-man {
-    height: 50vh;
-    max-height: 400px;
-    animation: turbulance 0.2s ease-in-out infinite;
-    -webkit-animation: turbulance 0.2s ease-in-out infinite;
+.preloader {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  width: 60px;
+  height: 60px;
+}
+
+.preloader div {
+  display:flex;
+  width: 25px;
+  height: 25px;
+  background: #4A676A;
+  border-radius: 3px;
+}
+
+.preloader div:nth-child(1) {
+  animation: squad1 3s steps(1) infinite .2s;
+}
+
+.preloader div:nth-child(2) {
+  animation: squad2 3s steps(1) infinite;
+}
+
+.preloader div:nth-child(3) {
+  animation: squad3 3s steps(1) infinite .4s;
+}
+
+@keyframes squad2 {
+  0%, 100% {
+    transform: translateY(0);
   }
-  .flying-man path{
-    fill: var(--items-color);
-    stroke: var(--items-color);
+  25% {
+    transform: translateY(35px);
   }
-  #Loader {
-    position: relative;
-    overflow: hidden;
-    background: orange; /* #f1c312 */
-    display: grid;
-    min-height: 100vh;
-    place-items: center;
+  50% {
+    transform: translate(-35px, 35px);
   }
-  .message {
-      color: black;
-      transform: translateY(-40vh);
-      -webkit-transform: translateY(-40vh);
-      -moz-transform: translateY(-40vh);
-      -ms-transform: translateY(-40vh);
-      -o-transform: translateY(-40vh);
-      font-size: 30px;
+  75% {
+    transform: translateX(-35px);
   }
-  .message::after {
-    content: '.';
-    animation: loading 3s linear infinite;
+}
+
+@keyframes squad1 {
+  0%, 100% {
+    transform: translateY(0);
   }
-  @keyframes turbulance {
-    20% {
-      transform: translateX(1.5px) rotate(0.8deg);
-    }
-    40% {
-      transform: translateX(-0.5px) rotate(0.4deg);
-    }
-    60% {
-      transform: translateX(0.5px) rotate(0.8deg);
-    }
-    80% {
-      transform: translateX(-1px) rotate(0.8deg);
-    }
+  25% {
+    transform: translateX(35px);
   }
-  @keyframes loading {
-    33% {
-      content: '..';
-    }
-    66% {
-      content: '...';
-    }
+  50% {
+    transform: translate(35px, 35px);
   }
+  75% {
+    transform: translateY(35px);
+  }
+}
+
+@keyframes squad3 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-35px);
+  }
+  50% {
+    transform: translate(35px, -35px);
+  }
+  75% {
+    transform: translateX(35px);
+  }
+}
+
+/*-----------------------*/
+#by {
+  font-family: 'Arima Madurai', cursive;
+  color: #4A676A;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+/*
+light-blue: #C1D0D0;
+dark-blue: #4A676A;
+cream: #FFEAA5;
+yellow: #FFB037;
+*/
