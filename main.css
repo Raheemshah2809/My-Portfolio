@@ -724,7 +724,7 @@ Responsive grid system...........................
   }
   .main-nav {
     margin-left: 10%;
-    margin-top: 20px; 
+    margin-top: -5px; 
   }
   .main-nav li {
     margin-left: 2px;
