@@ -167,3 +167,13 @@ p {
   background-image: url("");
 }
 
+.back{
+  text-align: center;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  background-color: #dd003b;
+  border: 1px solid #dd003b;
+  color: #fff;
+}

@@ -1,36 +1,35 @@
-.contact-methods li{
-    display:inline-block;
-    text-decoration:none;
-    transition: transform .5s;
-  }
-  
-  .contact-methods li:hover {
-     transform: translateY(-20px);
-  }
-  
-  .contact-methods li:hover .contact-type {
-    opacity: 1;
-  }
-  
-  .contact-type {
-    display:block;
-  }
-  
-  .contact-methods .contact-type {
-      color: darkorange;
-      font-size: .9em;
-      font-weight: bold;
-      font-family: sans-serif;
-      text-align: center;
-      text-transform: uppercase;
-      opacity: 0;
-      transition: opacity .5s;
-  }
-  
-  .contact-methods img {
-    width:100px;
-    height:100px;
-    object-fit:cover;
-    object-position:top;
-  }
-  
+.contact-methods li {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform .5s;
+}
+
+.contact-methods li:hover {
+  transform: translateY(-20px);
+}
+
+.contact-methods li:hover .contact-type {
+  opacity: 1;
+}
+
+.contact-type {
+  display: block;
+}
+
+.contact-methods .contact-type {
+  color: darkorange;
+  font-size: .9em;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.contact-methods img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: top;
+}

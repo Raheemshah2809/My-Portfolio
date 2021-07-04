@@ -1,22 +1,26 @@
 <!doctype html>
 <html lang="en">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
-        <meta charset="utf-8">
-        <script src="scripts/main.js"></script>
-        <title>Breakout Game (Project)</title>
-        <link rel = "stylesheet" type = "text/css" href = "loader.css"/>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168747559-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  gtag('config', 'UA-168747559-1');
-</script>
+<head>
+  <meta charset="utf-8">
+  <script src="scripts/main.js"></script>
+  <title>Breakout Game (Project)</title>
+  <link rel="stylesheet" type="text/css" href="loader.css" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168747559-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-168747559-1');
+  </script>
 </head>
-        
+
 <body>
   <section>
     <div class="preloader">
@@ -27,17 +31,15 @@
     <span id="by">Under Maintenance</span>
     <span id="by">This page is not ready</span>
     <span id="by">Once this is ready this will showcase all of my projects.</span>
-   <a href="index.html" <span id="by">Click here to go back</span></a>
+    <a href="index.html" span id="by">Click here to go back</span></a>
+    <a href="project.html" span id="by">Click here to visit the page still in development</span></a>
   </section>
 
   <script>
-    $(window).on("load",function(){
-     $(".loader-wrapper").fadeOut("slow");
-});
+    $(window).on("load", function () {
+      $(".loader-wrapper").fadeOut("slow");
+    });
   </script>
-  </body>
+</body>
 
-  </html>
-      
-
-    
+</html>
