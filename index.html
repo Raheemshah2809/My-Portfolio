@@ -1,163 +1,204 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="utf-8">
-<title>Raheem's Portfolio</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<link rel="stylesheet" type="text/css"
-  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-<link rel="stylesheet" type="text/css" href="main.css" />
-<link rel="icon" href="https://img.icons8.com/color/40/000000/home.png" />
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168747559-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" href="https://img.icons8.com/color/40/000000/home.png" />
+        <title>Portfolio</title>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+        
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-168747559-1');
+        </script>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Raheem</a>
+                </div>
 
-  gtag('config', 'UA-168747559-1');
-</script>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-</head>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Raheem</span><br>Software Engineer</h1>
+                    
 
-<body>
-  <div>
-    <header id="home">
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+                <p>&#169; Jan 2022 Release - Dev Preview</p>
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <!-- <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a> -->
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
 
-      <nav>
-        <div class="row">
-          <div class="row logo">
-            <div class="logo-text">
-              <h1>Raheem Shah</h1>
-              <h2>Junior Developer</h2>
+                <div class="home__img">    
+                    <!-- <img src="assets/img/perfil.png" alt=""> -->
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <!-- <img src="assets/img/about.jpg" alt=""> -->
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'm Raheem</h2>
+                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div>
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div>
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div>
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div>
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+                <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enviar" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Raheem</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-          </div>
+            <p>&#169; 2022 copyright all right reserved</p>
+        </footer>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-          <ul class="main-nav">
-            <li><a href="#expertise">Skills</a></li>
-            <li><a href="#portfolio">Projects</a></li>
-            <li><a href="Loader.html">Project Page</a></li>
-            <li><a href="contactme.html">Contact</a></li>
-          </ul>
-
-        </div>
-      </nav>
-
-
-      <div class="hero-text-box">
-        <h2>Hi And Welcome To My Portfolio</h2>
-        <br>
-        <p>I am a young Software Engineer looking to showcase my skills to many stakeholders.
-
-          Currently, I manage a small business to create websites for clients; which are for personal and commercial
-          use. You can view the project section of this site to see what I have been working on so far.
-
-          Please have a look at the link for Fluorescent Ideas (previously UK Web Solutions) for more insight.
-          Additionally, visit my Github page to see...<p>
-            <a class="btn btn-full js--scroll-to-contact"
-              href="https://docs.google.com/document/d/1GzdDTFlCNG8JYlperxk3EEveaR--ICu9pKat6rL7nh0/edit?usp=sharing"
-              target='_blank'>Resume / CV</a>
-            <a class="btn btn-ghost js--scroll-to-contact" href="https://fluorescentideasltd.com/"
-              target="_blank">Fluorescent Ideas</a>
-            <a class="btn btn-ghost js--scroll-to-contact" href="https://github.com/Raheemshah2809"
-              target="_blank">Github</a>
-      </div>
-
-    </header>
-
-    <section class="section-features" id="expertise">
-      <div class="section-features-title">
-        <h2>Skills</h2>
-        <p>Here are some of my skills I have learned and still adapting and expanding to create exciting and helpful
-          applications that can benefit people</p>
-      </div>
-
-      <div class="section group">
-
-        <div class="col span_1_of_3 box">
-          <i class="ion-android-bulb big-icon"></i>
-          <h3> Bright Ideas</h3>
-          <p>I collaborate with clients and other individuals to help create the best Ideas and then turn them into
-            reality.</p>
-        </div>
-        <div class="col span_1_of_3  box">
-          <i class="ion-android-desktop big-icon"></i>
-          <h3>Websites</h3>
-          <p>I design websites for clients which are personal or commercial use. Also, I can develop Android and IOS
-            applications specific to the needs of clients.</p>
-        </div>
-        <div class="col span_1_of_3 box">
-          <i class="ion-social-html5-outline big-icon"></i>
-          <h3>Code</h3>
-          <p>Here are some of the languages I have learned and use nearly everyday. <br>
-            MySQL, Java, HTML, PhpMyAdmin, JavaScript , CSS , SQL, Bootstrap, Scss, Less.
-          </p>
-        </div>
-
-      </div>
-
-    </section>
-    <section class="section-portfolio" id="portfolio">
-      <!-- --------------------- -->
-      <div class="projects-page">
-        <h1 class="header1">Projects</h1>
-        <p class="header1">Here are all of my projects I have completed so far with many more to come soon!</p>
-      </div>
-      <ul class="list">
-        <a href="Breakout.html" target="_blank" <p>BreakOut Game</p></a>
-        <a href="diceout.html" target="_blank" <p>DiceOut Game</p></a>
-        <a href="https://nabzcutz.com/index.html" target="_blank" <p>The Booth UK</p></a>
-        <a href="https://tonisdeli.co.uk/" target="_blank" <p>Toni's Deli</p></a>
-        <a href="https://github.com/Raheemshah2809/Portfolio-android-app" target="_blank" <p>Portfolio Android App</p>
-          </a>
-        <a href="https://github.com/Raheemshah2809/The-Booth-Android-App" target="_blank" <p>The Booth Android App</p>
-          </a>
-        <a href="https://myitsolutionsltd.com/" target="_blank" <p>My IT Solutions Ltd</p></a>
-        <a href="https://applicationsupportanalystltd.com/" target="_blank" <p>Application Support Analyst</p></a>
-        <a href="https://raheemshah2809.github.io/api-coursework/" target="_blank" <p>API coursework</p></a>
-        <a href="https://github.com/Raheemshah2809/Relax-app" target="_blank" <p>Relax Version 1</p></a>
-        <a href="https://github.com/Raheemshah2809/Relax-V2" target="_blank" <p>Relax Version 2 Current (Version)</p>
-          </a>
-      </ul>
-
-    </section>
-
-    <footer>
-      <div>
-      </div>
-      <div>
-        <p>Made By Raheem Shah &copy; 2021<br>
-          Website Version 1.3.60 - <a
-            href="https://github.com/Raheemshah2809/Raheemshah.github.io/commit/feb53472f8f42c31327f6e39330df8a5b3147f20"
-            target="_blank">Build (feb53472)</a>
-          <br>
-          Android Version 1.3.1.B 17.01.2021 <a
-            href="https://github.com/Raheemshah2809/Portfolio-android-app/releases/tag/1.3.1" target="_blank">Download
-            It Here (Android Only)</a>
-        </p>
-      </div>
-      <div class="social-icons">
-        <ul class="social-links">
-          <li><a target='_blank' href="https://twitter.com/RaheemS60576255"><i class="ion-social-twitter"></i></a></li>
-          <li><a target='_blank' href="https://www.linkedin.com/in/raheemshah2809/"><i
-                class="ion-social-linkedin"></i></a></li>
-          <li><a target='_blank' href="https://www.instagram.com/raheemshah2809/"><i
-                class="ion-social-instagram"></i></a></li>
-          <li><a href="" target='_blank'><i class="ion-social-facebook"></i></a>
-          </li>
-          <li><a href="https://github.com/Raheemshah2809" target='_blank'><i class="ion-social-github"></i></a></li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
