@@ -35,7 +35,7 @@
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
@@ -54,24 +54,29 @@
                 </h1>
 
 
-                <a href="#contact" class="button">Contact</a>
+                <a href="https://docs.google.com/document/d/1GzdDTFlCNG8JYlperxk3EEveaR--ICu9pKat6rL7nh0/edit?usp=sharing" class="button" target="blank">Resume/CV</a>
+                <a href="https://fluorescentideasltd.com/" target="blank" class="button">Fluorescent Ideas</a>
+                <a href="#contact" target="blank" class="button">Contact</a>
             </div>
-            <p>&#169; Jan 2022 Release - Dev Preview - Release Can-2
+            <p class="home__title">&#169; Jan 2022 Release - Dev Preview - Release Can-2.5 
+                <!-- Remove the home title code in live version-->
                 <br>
                 <br>
                 What's new in this release;
                 <br>
                 <br>
-                New Working Contact Form
+                Added Portfolio Links
                 <br>
-                Updated Footer Links and Icon Links
+                Added More Buttons To HomePage
                 <br>
-                Added Test text for Portfolio section
+                Removed Old Skill and Replaced With Mobile Dev
+                <br>
+                Working On Link Styling
                 <br>
                 Adding A Cookies Notice (Release Can-3-4)
             </p>
             <div class="home__social">
-                <a href="https://www.linkedin.com/in/raheemshah2809/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.linkedin.com/in/raheemshah2809/" target="blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
                 <!-- <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a> -->
                 <a href="https://github.com/Raheemshah2809" target="_blank" class="home__social-icon"><i
                         class='bx bxl-github'></i></a>
@@ -93,9 +98,7 @@
 
                 <div>
                     <h2 class="about__subtitle">I'm Raheem</h2>
-                    <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum
-                        expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo
-                        recusandae cumque perferendis! Recusandae alias accusamus atque.</p>
+                    <p class="about__text">I am a Software Engineer looking to showcase my skills to many stakeholders. Currently, I manage a small business to create websites and applications for clients; which are for personal or commercial use.  Please have a look at the link for Fluorescent Ideas (previously UK Web Solutions) for more insight. Additionally, visit my Github page to see...</p>
                 </div>
             </div>
         </section>
@@ -106,9 +109,8 @@
 
             <div class="skills__container bd-grid">
                 <div>
-                    <h2 class="skills__subtitle">Profesional Skills</h2>
-                    <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id
-                        vero amet, alias architecto consectetur error eum eaque sit.</p>
+                    <h2 class="skills__subtitle">Skills</h2>
+                    <p class="skills__text">Here are some of my skills I have learned and still adapting and expanding to create exciting and helpful applications that can benefit people</p>
                     <div class="skills__data">
                         <div class="skills__names">
                             <i class='bx bxl-html5 skills__icon'></i>
@@ -146,16 +148,18 @@
                     </div>
                     <div class="skills__data">
                         <div class="skills__names">
-                            <i class='bx bxs-paint skills__icon'></i>
-                            <span class="skills__name">UX/UI</span>
+                            <i class='bx bxs-mobile skills__icon'></i>
+                            <span class="skills__name">Android/iOS Development</span>
                         </div>
                         <div>
                         </div>
                         <div>
                             <span class="skills__percentage"></span>
                         </div>
+                        
 
                     </div>
+                    
                 </div>
 
                 <div>
@@ -165,42 +169,43 @@
         </section>
 
         <!--===== WORK =====-->
-        <section class="work section" id="work">
-            <h2 class="section-title">Work</h2>
-            <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet,
-                alias architecto consectetur error eum eaque sit.</p>
-
+        <section class="work section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="skills__text">Here Are A Few Projects I Have Created. There are More Located on My Github, Select Me To Go Below</p>
+            <a href="https://github.com/Raheemshah2809" target="blank"><h2 class="section-title">Github</h2></a>
             <div class="work__container bd-grid">
-                <div class="work__img">
+                <a href="https://nabzcutz.com/" target="blank" class="work__img">
                     <img src="assets/img/work1.jpg" alt="">
-                    <span>Test</span>
-                </div>
-                <div class="work__img">
+                    <span class="desc">The Booth</span>
+                </a>
+                <a href="https://tonisdeli.co.uk/" target="blank" class="work__img">
                     <img src="assets/img/work2.jpg" alt="">
-                    <span>Test</span>
-                </div>
-                <div class="work__img">
+                    <span class="desc">Toni's Deli</span>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.fluorescentideas.relaxv2" target="blank" class="work__img">
                     <img src="assets/img/work3.jpg" alt="">
-                    <span>Test</span>
-                </div>
-                <div class="work__img">
+                    <span class="desc">Relax Android App</span>
+                </a>
+                <a href="https://raheemshah2809.github.io/The-Student-Marketplace/" target="blank" class="work__img">
                     <img src="assets/img/work4.jpg" alt="">
-                    <span>Test</span>
-                </div>
-                <div class="work__img">
+                    <span class="desc">The Student Marketplace</span>
+                </a>
+                
+                <a href="https://raheemshah2809.github.io/api-coursework/" target="blank" class="work__img">
                     <img src="assets/img/work5.jpg" alt="">
-                    <span>Test</span>
-                </div>
-                <div class="work__img">
-                    <img src="assets/img/work6.jpg" alt="">
-                    <span>Test</span>
-                </div>
+                    <span class="desc">API Coursework</span>
+                </a>
+                <a href="diceout.html"  class="work__img">
+                    <img src="assets/img/work6.jpg" target="blank" alt="">
+                    <span class="desc">Dice Out Game</span>
+                </a>
             </div>
         </section>
 
         <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
+            <p class="skills__text">If You Would Like To Contact Me, Please Fill Out the Form and I Answer As Soon As I Can</p>
             <p class="skills__text">Please Allow 1 Working Day For A Reply, Thank you.</p>
             <div class="contact__container bd-grid">
                 <form action="https://formspree.io/f/xjvjqepe" method="POST">
@@ -218,12 +223,12 @@
     <footer class="footer">
         <p class="footer__title">Raheem</p>
         <div class="footer__social">
-            <a href="https://github.com/Raheemshah2809" class="footer__icon"><i class='bx bxl-github'></i></a>
-            <a href="https://www.linkedin.com/in/raheemshah2809/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Raheemshah2809" target="blank" class="footer__icon"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/raheemshah2809/" target="blank" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
             <!-- <a href="404.html" class="footer__icon"><i class='bx bx-cloud-download'></i></a>  -->
         </div>
         <p>&#169; 2022 copyright all right reserved</p>
-        <p>Version 2.1.0 / Release Can-2 </p>
+        <p>Version 2.5.0 / Release Can-2.5 </p>
     </footer>
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
