@@ -56,7 +56,21 @@ sr.reveal('.work__img',{interval: 200});
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
 
+const chk = document.getElementById('chk');
 
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+
+
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
 
 
 
