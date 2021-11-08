@@ -39,8 +39,8 @@
     position: relative;
     height: 26px;
     width: 50px;
-    left: 28em;
-    top: 40px;
+    right: -46em;
+    bottom: 36em;
   }
 }
 
@@ -56,7 +56,8 @@
     position: relative;
     height: 26px;
     width: 50px;
-    transform: scale(1.5);
+    right: -20em;
+    bottom: 42em;
 }
 }
 /*===== Margenes =====*/
@@ -582,18 +583,73 @@ img {
   .home__img {
     right: 10%;
   }
+  .label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    right: -58em;
+    bottom: 50em;
+  }
+  
+}
+
+@media screen and (min-width: 540px) {
+  .label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    /* right: -31em; */
+    bottom: 36em;
+  }
+  
+
+}
+
+@media screen and (max-width: 414px) {
+  .label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    right: -23em;
+    bottom: 41em;
+  }
+  
+
 }
 
 .desc {
   text-align: center;
   display: block;
+  color: teal;
+  
 }
 
 
 
-body.dark {
+body.dark, body.dark i{
   background: #292C35;
-  color: white;
+  color: white !important;
 }
 
 .checkbox {
@@ -627,3 +683,4 @@ body.dark {
 .fa-sun {
   color: #f39c12;
 }
+
