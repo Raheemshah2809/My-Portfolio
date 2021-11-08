@@ -561,7 +561,7 @@ img {
 
 
 body.dark,
-body.dark i {
+body.dark i:not(.bx.bx-menu) {
   background: #292C35;
   color: white !important;
 }
