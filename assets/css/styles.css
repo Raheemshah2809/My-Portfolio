@@ -477,9 +477,9 @@ img {
     height: 100vh;
   }
 
-  .home__data {
+  /* .home__data {
     align-self: flex-end;
-  }
+  } */
 
   .home__social {
     padding-top: 0;
