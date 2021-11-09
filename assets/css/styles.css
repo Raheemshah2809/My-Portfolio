@@ -560,7 +560,8 @@ img {
 
 
 body.dark,
-body.dark .l-header {
+body.dark .l-header, 
+body.dark .nav__menu{
   background: #292C35;
   color: white !important;
   transition: 0.5s;
