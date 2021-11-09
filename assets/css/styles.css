@@ -569,8 +569,7 @@ body.dark .l-header{
 
 body.dark i:not(.bx.bx-menu),
 body.dark .l-header a,
-body.dark .nav__toggle,
-body.dark .nav__menu {
+body.dark .nav__toggle {
   color: white !important;
   transition: 0.5s;
   transition-timing-function: ease-in;
@@ -581,8 +580,11 @@ body.dark .nav__menu {
   position: absolute;
 }
 
-body.dark .nav__menu{
+body.dark .nav__menu.show{
   background: #1c1e24;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+
 }
 
 .label .ball {
