@@ -644,7 +644,8 @@ body.dark .nav__toggle {
   position: fixed;
   bottom: 15px;
   right: 15px;
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   margin: 0 !important;
   z-index: 999;
   opacity: 0;
