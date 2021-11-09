@@ -66,33 +66,6 @@
                 <a href="https://fluorescentideasltd.com/" target="blank" class="button">Fluorescent Ideas</a>
             </div>
             <p class="home__title">&#169; Dec 2022 Release - Release Can - 2.1.95
-                <!-- Remove the home title code in live version-->
-                <br>
-                <br>
-                What's new in this release;
-                <br>
-                <br>
-                (2.1.5) - Positioned Toggle
-                Added Portfolio Links
-                <br>
-                Added More Buttons To HomePage
-                <br>
-                Removed Old Skill and Replaced With Mobile Dev
-                <br>
-                Working On Link Styling
-                <br>
-                Adding A Cookies Notice (Release Can-3-4)
-                <br>
-                Added DarkMode Toggle
-                <br>
-                (2.1.71) - Re-Positioned Toggle
-                <br>
-                (2.1.8) - Added Custom ScrollBar for Desktop - Added Portfolio Images
-                <br>
-                (2.1.9) - Testing and Final Release for December
-                <br>
-                (2.1.95) -  Re-applied Dark mode throughout the site - Added Cookie Notice - Fixed Images Not Loading <br>
-                Applied Dark Mode To Nav - Changed About me and Skills Page.
             </p>
 
             <div class="home__social">
@@ -111,18 +84,12 @@
         <!--===== ABOUT =====-->
         <section class="about section " id="about">
             <h2 class="section-title">About Me</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <!-- <img src="assets/img/about.jpg" alt=""> -->
-                </div>
-
-                <div>
-                    <p class="about__text">I am a Software Engineer looking to showcase my skills. Currently, I manage a
-                        small business that creates websites and applications for clients; which are for personal or
-                        commercial use. Please have a look at the link for Fluorescent Ideas for more insight.
-                        Additionally, visit my Github page to see more projects.</p>
-                </div>
+            <div>
+                <p class="about__text">I am a Software Engineer looking to showcase my skills. Currently, I manage a
+                    small business that creates websites and applications for clients; which are for personal or
+                    commercial use. Please have a look at the link for Fluorescent Ideas for more insight.
+                    Additionally, visit my Github page to see more projects.</p>
+            </div>
             </div>
         </section>
 
@@ -179,14 +146,29 @@
                         <div>
                             <span class="skills__percentage"></span>
                         </div>
-
-
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-react skills__icon'></i>
+                                <span class="skills__name">React</span>
+                            </div>
+                            <div>
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-github skills__icon'></i>
+                                    <span class="skills__name">Github</span>
+                                </div>
+                                <div>
+                                </div>
+                                <div>
+                                    <span class="skills__percentage"></span>
+                                </div>
                     </div>
-
-                </div>
-
-                <div>
-                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
                 </div>
             </div>
         </section>
@@ -261,7 +243,7 @@
                 var cookieAlert = document.querySelector(".cookie-alert");
                 var acceptCookies = document.querySelector(".accept-cookies");
 
-                cookieAlert.offsetHeight; 
+                cookieAlert.offsetHeight;
 
                 if (!getCookie("acceptCookies")) {
                     cookieAlert.classList.add("show");

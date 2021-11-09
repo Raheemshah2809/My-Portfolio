@@ -22,7 +22,7 @@
 
 @media screen and (min-width: 768px) {
   :root {
-    --big-font-size: 3.5rem;
+    --big-font-size: 2.5rem;
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
   }
@@ -91,7 +91,6 @@ img {
 
 }
 
-/*===== CLASS CSS ===== */
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -122,12 +121,11 @@ img {
   background-color: var(--first-color);
 }
 
-.section {
+/* .section {
   padding-top: 3rem;
   padding-bottom: 2rem;
-}
+} */
 
-/*===== LAYOUT =====*/
 .bd-grid {
   max-width: 1024px;
   display: grid;
@@ -151,7 +149,6 @@ img {
   transition-timing-function: ease-in;
 }
 
-/*===== NAV =====*/
 .nav {
   height: var(--header-height);
   display: flex;
@@ -236,7 +233,7 @@ img {
 .home__title {
   /* font-size: var(--big-font-size); */
   margin-bottom: var(--mb-5);
-  margin-top: 30px;
+  margin-top: 15%;
 }
 
 .home__title-color {
@@ -311,8 +308,9 @@ img {
 }
 
 .skills__text {
-  margin-bottom: var(--mb-4);
   text-align: center;
+  width: 80%;
+  margin: 13px auto;
 }
 
 .skills__data {
@@ -439,10 +437,10 @@ img {
     margin: 0;
   }
 
-  .section {
+  /* .section {
     padding-top: 4rem;
     padding-bottom: 3rem;
-  }
+  } */
 
   .section-title {
     margin-bottom: var(--mb-6);
@@ -502,7 +500,6 @@ img {
 
   .about__container,
   .skills__container {
-    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: initial;
   }
@@ -664,4 +661,9 @@ body.dark .nav__toggle {
 }
 .cookie-alert .btn {
   width:100%;
+}
+.about__text{
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
