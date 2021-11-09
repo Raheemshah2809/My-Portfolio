@@ -6,6 +6,3 @@
 
 Welcome to my portfolio, this is where all of my work and projects will be displayed. 
 
-Dev Build:
-
-https://sharp-wing-8d3085.netlify.app/
