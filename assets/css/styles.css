@@ -561,8 +561,7 @@ img {
 
 
 body.dark,
-body.dark .l-header,
-body.dark .nav__menu {
+body.dark .l-header{
   background: #292C35;
   color: white !important;
   transition: 0.5s;
@@ -571,7 +570,8 @@ body.dark .nav__menu {
 
 body.dark i:not(.bx.bx-menu),
 body.dark .l-header a,
-body.dark .nav__toggle {
+body.dark .nav__toggle,
+body.dark .nav__menu {
   color: white !important;
   transition: 0.5s;
   transition-timing-function: ease-in;
