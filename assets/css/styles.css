@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
@@ -561,7 +560,7 @@ img {
 
 
 body.dark,
-body.dark .l-header{
+body.dark .l-header {
   background: #292C35;
   color: white !important;
   transition: 0.5s;
@@ -650,24 +649,42 @@ body.dark .nav__menu {
   transition: all 500ms ease-out;
 }
 
-.cookie-alert.show{
+.cookie-alert.show {
   opacity: 1;
   transform: translateY(0%);
   transition-delay: 1000ms;
   color: black;
 }
+
 .cookie-alert .btn-primary {
   background-color: teal;
 }
+
 .cookie-alert .btn {
-  width:100%;
+  width: 100%;
 }
-.about__text{
+
+.about__text {
   text-align: center;
   width: 80%;
   margin: 0 auto;
 }
 
-/* .tophome{
+.top {
+  display: block;
+  border: none;
+  outline: none;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  margin-left: auto;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.75 em 3.5 em;
+  font-weight: var(--font-semi);
+  border-radius: 2.5 rem;
+  margin: 2.5 px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
 
-} */
+}
