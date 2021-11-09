@@ -642,8 +642,8 @@ body.dark .nav__toggle {
 
 .cookie-alert {
   position: fixed;
-  bottom: 15px;
-  right: 15px;
+  bottom: 0px;
+  right: 0px;
   width: 100%;
   max-width: 320px;
   margin: 0 !important;
@@ -661,4 +661,7 @@ body.dark .nav__toggle {
 }
 .cookie-alert .btn-primary {
   background-color: teal;
+}
+.cookie-alert .btn {
+  width:100%;
 }
