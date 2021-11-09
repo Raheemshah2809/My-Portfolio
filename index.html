@@ -27,7 +27,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">Raheem</a>
+                <a href="index.html" class="nav__logo">Raheem</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
@@ -65,7 +65,7 @@
                     class="button" target="blank">Resume/CV</a>
                 <a href="https://fluorescentideasltd.com/" target="blank" class="button">Fluorescent Ideas</a>
             </div>
-            <p class="home__title">&#169; Dec 2022 Release - Release Can - 2.9.1
+            <p class="home__title">&#169; Dec 2022 Release - Release Can - 2.1.95
                 <!-- Remove the home title code in live version-->
                 <br>
                 <br>
@@ -89,8 +89,12 @@
                 <br>
                 (2.1.8) - Added Custom ScrollBar for Desktop - Added Portfolio Images
                 <br>
-                (2.9.1) - Testing and Final Release for December
+                (2.1.9) - Testing and Final Release for December
+                <br>
+                (2.1.95) -  Re-applied Dark mode throughout the site - Added Cookie Notice - Fixed Images Not Loading <br>
+                Applied Dark Mode To Nav - Changed About me and Skills Page.
             </p>
+
             <div class="home__social">
                 <a href="https://www.linkedin.com/in/raheemshah2809/" target="blank" class="home__social-icon"><i
                         class='bx bxl-linkedin'></i></a>
@@ -106,7 +110,7 @@
 
         <!--===== ABOUT =====-->
         <section class="about section " id="about">
-            <h2 class="section-title">About</h2>
+            <h2 class="section-title">About Me</h2>
 
             <div class="about__container bd-grid">
                 <div class="about__img">
@@ -114,7 +118,6 @@
                 </div>
 
                 <div>
-                    <h2 class="about__subtitle">I'm Raheem</h2>
                     <p class="about__text">I am a Software Engineer looking to showcase my skills. Currently, I manage a
                         small business that creates websites and applications for clients; which are for personal or
                         commercial use. Please have a look at the link for Fluorescent Ideas for more insight.
@@ -198,29 +201,29 @@
             </a>
             <div class="work__container bd-grid">
                 <a href="https://nabzcutz.com/" target="blank" class="work__img">
-                    <img src="assets/img/thebooth.png" alt="">
+                    <img src="assets/img/thebooth.png" loading="lazy" alt="">
                     <span class="desc">The Booth</span>
                 </a>
                 <a href="https://tonisdeli.co.uk/" target="blank" class="work__img">
-                    <img src="assets/img/tonis.png" alt="">
+                    <img src="assets/img/tonis.png" loading="lazy" alt="">
                     <span class="desc">Toni's Deli</span>
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.fluorescentideas.relaxv2" target="blank"
                     class="work__img">
-                    <img src="assets/img/relaxapp.png" alt="">
+                    <img src="assets/img/relaxapp.png" loading="lazy" alt="">
                     <span class="desc">Relax Android App</span>
                 </a>
                 <a href="https://raheemshah2809.github.io/The-Student-Marketplace/" target="blank" class="work__img">
-                    <img src="assets/img/studentmarketplace.png" alt="">
+                    <img src="assets/img/studentmarketplace.png" loading="lazy" alt="">
                     <span class="desc">The Student Marketplace</span>
                 </a>
 
                 <a href="https://raheemshah2809.github.io/api-coursework/" target="blank" class="work__img">
-                    <img src="assets/img/apicoursework.png" alt="">
+                    <img src="assets/img/apicoursework.png" loading="lazy" alt="">
                     <span class="desc">API Coursework</span>
                 </a>
                 <a href="diceout.html" target="_blank" class="work__img">
-                    <img src="assets/img/diceout.png" target="blank" alt="">
+                    <img src="assets/img/diceout.png" loading="lazy" target="blank" alt="">
                     <span class="desc">Dice Out Game</span>
                 </a>
             </div>
@@ -239,63 +242,61 @@
                     <textarea class="contact__input" placeholder="Message" name="message"></textarea>
                     <button class="contact__button button" type="submit">Send</button>
                 </form>
-
             </div>
-
-        </section>
-        <div class="card cookie-alert">
-            <div class="card-body">
-                <h5 class="card-title">&#x1F36A; Do you like cookies?</h5>
-                <p class="card-text">We use cookies to ensure you get the best experience on our website.</p>
-                <div class="btn-toolbar justify-content-end">
-                    <a href="http://cookiesandyou.com/" target="_blank" class="btn btn-link">Learn more</a>
-                    <a href="#" class="btn btn-primary accept-cookies">Accept</a>
+            <div class="card cookie-alert">
+                <div class="card-body">
+                    <h5 class="card-title"> Do you like cookies?</h5>
+                    <p class="card-text">We use cookies to ensure you get the best experience on our website.</p>
+                    <div class="btn-toolbar justify-content-end">
+                        <a href="http://cookiesandyou.com/" target="_blank" class="btn btn-link">Learn more</a>
+                        <a class="btn btn-primary accept-cookies">Accept</a>
+                    </div>
                 </div>
             </div>
-            <script>
-                (function () {
-                    "use strict";
+        </section>
+        <script>
+            (function () {
+                "use strict";
 
-                    var cookieAlert = document.querySelector(".cookie-alert");
-                    var acceptCookies = document.querySelector(".accept-cookies");
+                var cookieAlert = document.querySelector(".cookie-alert");
+                var acceptCookies = document.querySelector(".accept-cookies");
 
-                    cookieAlert
-                    .offsetHeight; // Force browser to trigger reflow (https://stackoverflow.com/a/39451131)
+                cookieAlert.offsetHeight; 
 
-                    if (!getCookie("acceptCookies")) {
-                        cookieAlert.classList.add("show");
-                    }
-
-                    acceptCookies.addEventListener("click", function () {
-                        setCookie("acceptCookies", true, 60);
-                        cookieAlert.classList.remove("show");
-                    });
-                })();
-
-                // Cookie functions stolen from w3schools
-                function setCookie(cname, cvalue, exdays) {
-                    var d = new Date();
-                    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-                    var expires = "expires=" + d.toUTCString();
-                    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+                if (!getCookie("acceptCookies")) {
+                    cookieAlert.classList.add("show");
                 }
 
-                function getCookie(cname) {
-                    var name = cname + "=";
-                    var decodedCookie = decodeURIComponent(document.cookie);
-                    var ca = decodedCookie.split(';');
-                    for (var i = 0; i < ca.length; i++) {
-                        var c = ca[i];
-                        while (c.charAt(0) === ' ') {
-                            c = c.substring(1);
-                        }
-                        if (c.indexOf(name) === 0) {
-                            return c.substring(name.length, c.length);
-                        }
+                acceptCookies.addEventListener("click", function () {
+                    setCookie("acceptCookies", true, 60);
+                    cookieAlert.classList.remove("show");
+                });
+            })();
+
+            // Cookie functions stolen from w3schools
+            function setCookie(cname, cvalue, exdays) {
+                var d = new Date();
+                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                var expires = "expires=" + d.toUTCString();
+                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+
+            function getCookie(cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var ca = decodedCookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) === ' ') {
+                        c = c.substring(1);
                     }
-                    return "";
+                    if (c.indexOf(name) === 0) {
+                        return c.substring(name.length, c.length);
+                    }
                 }
-            </script>
+                return "";
+            }
+        </script>
         </div>
     </main>
     <!--===== FOOTER =====-->
@@ -309,7 +310,7 @@
             <!-- <a href="404.html" class="footer__icon"><i class='bx bx-cloud-download'></i></a>  -->
         </div>
         <p>&#169; 2022 copyright all right reserved</p>
-        <p>Version 2.9.1 / Release Can - 2.9.1 </p>
+        <p>Version 2.1.95 / Release Can - 2.1.95 </p>
     </footer>
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>

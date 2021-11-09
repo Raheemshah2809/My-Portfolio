@@ -44,7 +44,7 @@
   --mb-6: 3rem;
 }
 
-/*===== z index =====*/
+
 :root {
   --z-back: -10;
   --z-normal: 1;
@@ -52,7 +52,6 @@
   --z-fixed: 100;
 }
 
-/*===== BASE =====*/
 *,
 ::before,
 ::after {
@@ -68,6 +67,8 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  transition: 0.5s;
+  transition-timing-function: ease-in;
 }
 
 h1,
@@ -83,13 +84,15 @@ ul {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+  color: bla !important;
 }
 
 img {
   max-width: 100%;
   height: auto;
   display: block;
+
 }
 
 /*===== CLASS CSS ===== */
@@ -147,6 +150,9 @@ img {
   z-index: var(--z-fixed);
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
+  color: white !important;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
 }
 
 /*===== NAV =====*/
@@ -234,6 +240,7 @@ img {
 .home__title {
   /* font-size: var(--big-font-size); */
   margin-bottom: var(--mb-5);
+  margin-top: 30px;
 }
 
 .home__title-color {
@@ -561,9 +568,20 @@ img {
 
 
 body.dark,
-body.dark i:not(.bx.bx-menu) {
+body.dark .l-header,
+body.dark .nav__menu {
   background: #292C35;
   color: white !important;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+body.dark i:not(.bx.bx-menu),
+body.dark .l-header a,
+body.dark .nav__toggle {
+  color: white !important;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
 }
 
 .checkbox {
@@ -621,8 +639,10 @@ body.dark i:not(.bx.bx-menu) {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(transparent, #30ff00);
+  background: linear-gradient(transparent, #044d4d);
 }
+
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
 
 .cookie-alert {
   position: fixed;
@@ -636,8 +656,12 @@ body.dark i:not(.bx.bx-menu) {
   transition: all 500ms ease-out;
 }
 
-.cookie-alert.show {
+.cookie-alert.show{
   opacity: 1;
   transform: translateY(0%);
   transition-delay: 1000ms;
+  color: black;
+}
+.cookie-alert .btn-primary {
+  background-color: teal;
 }

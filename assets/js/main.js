@@ -89,4 +89,3 @@ floating_btn.addEventListener('click', () => {
 close_btn.addEventListener('click', () => {
     social_panel_container.classList.remove('visible')
 });
-
