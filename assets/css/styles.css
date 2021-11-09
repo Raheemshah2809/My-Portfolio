@@ -555,7 +555,6 @@ img {
   text-align: center;
   display: block;
   color: teal;
-
 }
 
 
@@ -609,4 +608,17 @@ body.dark i:not(.bx.bx-menu) {
   position: relative;
   height: 26px;
   width: 50px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, teal);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #30ff00);
 }
