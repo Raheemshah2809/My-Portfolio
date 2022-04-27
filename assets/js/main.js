@@ -81,6 +81,29 @@ chk.addEventListener('change', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const theme = localStorage.getItem('theme');
+    if (theme) {
+        const chk = document.getElementById('chk');
+
+        if (chk && theme === 'dark') {
+            chk.click();
+        }
+    }
+});
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+if (prefersDarkScheme.matches) {
+    document.body.classList.add("dark");
+} else {
+    document.body.classList.remove("dark");
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const prefersDarkScheme = e.matches ? "dark" : "light";
+        document.body.classList.toggle("dark", prefersDarkScheme === "dark");
+    });
+
 
 floating_btn.addEventListener('click', () => {
     social_panel_container.classList.toggle('visible')
@@ -89,3 +112,13 @@ floating_btn.addEventListener('click', () => {
 close_btn.addEventListener('click', () => {
     social_panel_container.classList.remove('visible')
 });
+
+const modalScriptSource = '/assets/js/modal.js';
+const hasModalScript = !!document.querySelector(`script[src="${modalScriptSource}"]`);
+
+if(!hasModalScript) {
+    const modalScript = document.createElement('script');
+    modalScript.src = modalScriptSource;
+    document.body.append(modalScript);
+}
+

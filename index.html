@@ -37,18 +37,12 @@
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    <li class="nav__item"><a href="https://statuspage1.netlify.app/" class="nav__link">StatusPage</a></li>
+                    <li class="nav__item"><a href="https://statuspage1.netlify.app/" class="nav__link">StatusPage</a>
+                    </li>
                 </ul>
 
             </div>
-            <div>
-                <input type="checkbox" class="checkbox" id="chk" />
-                <label class="label" for="chk">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
-                    <div class="ball"></div>
-                </label>
-            </div>
+            
             <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
             </div>
@@ -74,6 +68,27 @@
                 <!-- <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a> -->
                 <a href="https://github.com/Raheemshah2809" target="_blank" class="home__social-icon"><i
                         class='bx bxl-github'></i></a>
+
+                <a href="#popup2" class="home__social-icon"><i class='bx bx-cog'></i></a>
+                <div class="home__social-icon">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <!-- <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i> -->
+                        <div class="ball"></div>
+                    </label>
+                </div>
+                <div id="popup2" class="overlay light">
+                    <a class="cancel" href="#"></a>
+                    <div class="popup">
+                        <h2>ChangeLog (2.1)</h2>
+                        <div class="content">
+                            <p>Moved Dark Mode Toggle</p>
+                            <p>Added Device Darkmode Sync With System</p>
+                            <p>Updated Portfolio Project Section</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="home__img">
@@ -82,7 +97,7 @@
         </section>
 
         <!--===== ABOUT =====-->
-        <section class="about section " id="about">
+        <section class="about section" id="about">
             <h2 class="section-title">About Me</h2>
             <div>
                 <p class="about__text">I am a Software Engineer looking to showcase my skills. Currently, I manage a
@@ -293,8 +308,8 @@
                     class='bx bxl-linkedin'></i></a>
             <!-- <a href="404.html" class="footer__icon"><i class='bx bx-cloud-download'></i></a>  -->
         </div>
-        <p>&#169; 2021 copyright all right reserved</p>
-        <p>Version 2.0</p>
+        <p>&#169; 2022 copyright all right reserved</p>
+        <p>Version 2.1</p>
     </footer>
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
