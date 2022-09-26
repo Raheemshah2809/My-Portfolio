@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="https://img.icons8.com/color/40/000000/home.png" />
+    <script async
+        src="https://api.countapi.xyz/hit/portfolio/5edc2319-2aa9-4399-acae-9bda416e9815?callback=websiteVisits">
+    </script>
     <title>Portfolio | Home</title>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -42,7 +45,7 @@
                 </ul>
 
             </div>
-            
+
             <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
             </div>
@@ -56,6 +59,7 @@
             <div class="home__data">
                 <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Raheem</span><br>A Software Engineer
                 </h1>
+                <h5 class="home__title">Portfolio Views: <span id="visits"></span></h5>
                 <a href="https://docs.google.com/document/d/1GzdDTFlCNG8JYlperxk3EEveaR--ICu9pKat6rL7nh0/edit?usp=sharing"
                     class="button" target="blank">Resume/CV</a>
                 <a href="https://fluorescentideas.netlify.app/" target="blank" class="button">Fluorescent Ideas</a>
@@ -81,11 +85,13 @@
                 <div id="popup2" class="overlay light">
                     <a class="cancel" href="#"></a>
                     <div class="popup">
-                        <h2>ChangeLog (2.1)</h2>
+                        <h2>ChangeLog (2.2)</h2>
                         <div class="content">
-                            <p>Moved Dark Mode Toggle</p>
-                            <p>Added Device Darkmode Sync With System</p>
-                            <p>Updated Portfolio Project Section</p>
+                            <br>
+                            <p>Added Portfolio View Counter <br> (Sep 2022)</p>
+                            <p>Added Education History <br> (Sep 2022)</p>
+                            <p>Added Device Darkmode Sync With System <br> (April 2022)</p>
+                            <p>Updated Portfolio Project Section <br> (April 2022)</p>
                         </div>
                     </div>
                 </div>
@@ -102,8 +108,27 @@
             <div>
                 <p class="about__text">I am a Software Engineer looking to showcase my skills. Currently, I manage a
                     small business that creates websites and applications for clients; which are for personal or
-                    commercial use. Please have a look at the link for Fluorescent Ideas for more insight.
-                    Additionally, visit my Github page to see more projects.</p>
+                    commercial use. <br>
+                    I graduated from the university of Brighton with a BSc in Software Engineering and now have started
+                    a Masters in Information Security</p>
+            </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section-title">Education</h2>
+            <div>
+                <p class="about__text">
+                    <b>University of Brighton</b> <br>
+                    BSc Software Engineering <br>
+                    Grade: 2:1<br>
+                    2019 - 2022 <br>
+                    <br>
+                    <b>University of Surrey</b> <br>
+                    MSc Information Security <br>
+                    Grade: Ongoing <br>
+                    2022 - 2023 <br>
+                </p>
             </div>
             </div>
         </section>
@@ -112,10 +137,10 @@
         <section class="skills section" id="skills">
             <h2 class="section-title">Skills</h2>
 
-            <div class="skills__container bd-grid">
+            <!-- <div class="skills__container bd-grid">
                 <div>
                     <p class="skills__text">Here are just a few of my skills I have learned and still expanding to
-                        create exciting and helpful applications that can benefit people</p>
+                        create exciting and helpful applications that can benefit people</p> -->
                     <div class="skills__data">
                         <div class="skills__names">
                             <i class='bx bxl-html5 skills__icon'></i>
@@ -194,30 +219,27 @@
             <p class="skills__text">Here Are A Few Projects I Have Created. There are More Located on My Github, Select
                 Me To Go Below</p>
             <a href="https://github.com/Raheemshah2809" target="blank">
-                <h3 class="section-title">Github</h2>
+                <h3 class="section-title">Github (Click Me)</h2>
             </a>
             <div class="work__container bd-grid">
                 <a href="https://nabzcutz.com/" target="blank" class="work__img">
                     <img src="assets/img/thebooth.png" loading="lazy" alt="">
                     <span class="desc">The Booth</span>
                 </a>
-                <a href="https://tonisdeli.co.uk/" target="blank" class="work__img">
-                    <img src="assets/img/tonis.png" loading="lazy" alt="">
-                    <span class="desc">Toni's Deli</span>
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.fluorescentideas.relaxv2" target="blank"
-                    class="work__img">
-                    <img src="assets/img/relaxapp.png" loading="lazy" alt="">
-                    <span class="desc">Relax Android App</span>
-                </a>
                 <a href="https://raheemshah2809.github.io/The-Student-Marketplace/" target="blank" class="work__img">
                     <img src="assets/img/studentmarketplace.png" loading="lazy" alt="">
                     <span class="desc">The Student Marketplace</span>
                 </a>
 
-                <a href="https://raheemshah2809.github.io/api-coursework/" target="blank" class="work__img">
-                    <img src="assets/img/apicoursework.png" loading="lazy" alt="">
-                    <span class="desc">API Coursework</span>
+                <a href="https://play.google.com/store/apps/details?id=com.fluorescentideas.relaxv2" target="blank"
+                    class="work__img">
+                    <img src="assets/img/relaxapp.png" loading="lazy" alt="">
+                    <span class="desc">Relax Android App</span>
+                </a>
+
+                <a href="https://github.com/Raheemshah2809/Chatter" target="blank" class="work__img">
+                    <img src="assets/img/chatter app.PNG" loading="lazy" alt="">
+                    <span class="desc">Chatter App</span>
                 </a>
                 <a href="diceout.html" target="_blank" class="work__img">
                     <img src="assets/img/diceout.png" loading="lazy" target="blank" alt="">
@@ -252,6 +274,10 @@
             </div>
         </section>
         <script>
+            function websiteVisits(response) {
+                document.querySelector("#visits").textContent = response.value;
+            }
+
             (function () {
                 "use strict";
 
@@ -309,7 +335,7 @@
             <!-- <a href="404.html" class="footer__icon"><i class='bx bx-cloud-download'></i></a>  -->
         </div>
         <p>&#169; 2022 copyright all right reserved</p>
-        <p>Version 2.1</p>
+        <p>Version 2.2</p>
     </footer>
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
