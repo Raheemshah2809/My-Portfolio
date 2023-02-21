@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+
+        <h2>This is a Server Status Page</h2>
+        <p>You can use this page such as 'stats.yourpage.com'</p>
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="card">
+                    <div class="card-header">
+                        Server Status
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Web Servers : <strong>Active</strong> <img
+                                src="https://toppng.com/uploads/preview/free-icons-png-green-button-icon-11562980484agrqdnwooe.png"
+                                height="20px" style="border-radius:50%;" title="Active"></p>
+
+                        <p class="card-text">Mail Servers : <strong>Active</strong> <img
+                                src="https://toppng.com/uploads/preview/free-icons-png-green-button-icon-11562980484agrqdnwooe.png"
+                                height="20px" style="border-radius:50%;" title="Active"></p>
+
+                        <p class="card-text">FTP Servers : <strong>Busy</strong> <img
+                                src="https://www.pngkit.com/png/full/139-1398183_a-shiny-light-orange-button-orange-light-icon.png"
+                                height="20px" style="border-radius:50%;" title="Active"></p>
+
+                        <p class="card-text">Client Servers : <strong>Inactive</strong> <img
+                                src="https://img.favpng.com/25/18/19/red-circle-button-png-favpng-jHcWHy40hi7EfTVtFQegdS1i6.jpg"
+                                height="20px" style="border-radius:50%;"></p>
+
+
+                    </div>
+                    <div class="card-footer text-muted">
+                        1 Minutes ago
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+        <br>
+
+
+        <div class="row">
+
+            <div class="col-md-3">
+
+                <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Web Servers</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Active</h5>
+                        <p class="card-text">Web servers are active and usable.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+
+                <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Mail Servers</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Active</h5>
+                        <p class="card-text">Mail servers are active and usable.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+
+                <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                    <div class="card-header">FTP Servers</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Busy</h5>
+                        <p class="card-text">FTP servers are busy. It may cause a delay on commits.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Client Servers</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Inactive</h5>
+                        <p class="card-text">There is a maintanance on Client Servers.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+
+        <div class="row text-center border-top">
+
+            <div class="col-md-12">
+
+                <p>This is a footer &copy; alpbzdg</p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+
+</html>
