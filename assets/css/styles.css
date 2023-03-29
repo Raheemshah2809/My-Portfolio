@@ -322,6 +322,9 @@ img {
   margin-bottom: var(--mb-4);
   border-radius: .5rem;
   box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+  width: 50%;
+  top: 50%;
+  left: 23%;
 }
 
 .skills__icon {
