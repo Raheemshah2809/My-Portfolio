@@ -1,15 +1,19 @@
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId)
+        nav = document.getElementById(navId),
+        icon = toggle.querySelector("i")
 
     if (toggle && nav) {
         toggle.addEventListener('click', () => {
             nav.classList.toggle('show')
+            icon.classList.toggle('bx-menu')
+            icon.classList.toggle('bx-x')
         })
     }
 }
 showMenu('nav-toggle', 'nav-menu')
+
 
 /*===== ACTIVE AND REMOVE MENU =====*/
 const navLink = document.querySelectorAll('.nav__link');
@@ -121,4 +125,3 @@ if(!hasModalScript) {
     modalScript.src = modalScriptSource;
     document.body.append(modalScript);
 }
-
