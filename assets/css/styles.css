@@ -830,3 +830,9 @@ body.dark .nav__menu.show {
 .built-by-me span:nth-child(11) {
   color: #B10DC9;
 }
+
+#counter {
+  display: inline-block;
+  font-size: 1.25rem;
+  margin-left: 5px;
+}

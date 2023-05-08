@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="https://img.icons8.com/color/40/000000/home.png" />
-    <script async
-        src="https://api.countapi.xyz/hit/portfolio/5edc2319-2aa9-4399-acae-9bda416e9815?callback=websiteVisits">
-        </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -64,7 +61,7 @@
                 <h1 class="home__title">Hi,<br>I'm Raheem<br>A <span class="home__title-color">Software</span> & <span
                         class="home__title-color">Information Security</span> Engineer <br>
                 </h1>
-                <h5 class="home__title">Portfolio Views: <span id="visits"></span>
+                <h5 class="home__title">Portfolio Views: <div id="counter">0</div>
                     <br>
                     <div class="built-by-me">
                         <span>B</span>
@@ -81,8 +78,7 @@
                     </div>
 
                 </h5>
-                <a href="/Raheem Shah CV 2 - 2023.pdf"
-                    class="button" target="blank">Resume/CV</a>
+                <a href="/Raheem Shah CV 2 - 2023.pdf" class="button" target="blank">Resume/CV</a>
                 <a href="https://fluorescentideas.netlify.app/" target="blank" class="button">Fluorescent Ideas</a>
             </div>
 
@@ -300,6 +296,20 @@
             </div>
         </section>
         <script>
+            let count = parseInt(localStorage.getItem("count")) || 0;
+            const counter = document.getElementById("counter");
+
+            function incrementCount() {
+                if (performance.navigation.type === 1) { // check if page is being reloaded
+                    count++;
+                    localStorage.setItem("count", count);
+                    counter.innerText = count;
+                }
+            }
+
+            incrementCount();
+
+
             function websiteVisits(response) {
                 document.querySelector("#visits").textContent = response.value;
             }
