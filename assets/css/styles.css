@@ -743,6 +743,7 @@ body.dark .nav__menu.show {
   position: relative;
   top: 50%;
   left: 50%;
+  border-radius: 15px;
   transform: translate(-50%, -50%);
 }
 
@@ -751,6 +752,19 @@ body.dark .nav__menu.show {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
   color: var(--first-color);
 }
+
+.dark .popup{
+  background: #212529;
+  color: var(--first-color);
+}
+
+
+.dark .popup h2 {
+  margin-top: 0;
+  color: #fff;
+  font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+}
+
 
 .popup h2 {
   margin-top: 0;
